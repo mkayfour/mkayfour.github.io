@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Mohit Kumar | Portfolio Website</title>
+
+	<link rel="icon" href="logos/favicon.png" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mainStyle.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function setTheme() {
+			var min = 0;
+			var max = 6;
+			var random = Math.floor(Math.random() * (+max - +min)) + +min;
+			console.log("Random Number Generated : " + random);
+
+			if (random == 0) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-indigo.css"
+				}).appendTo("head");
+			}
+			if (random == 1) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-red.css"
+				}).appendTo("head");
+			}
+			if (random == 2) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-blue.css"
+				}).appendTo("head");
+			}
+			if (random == 3) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-grey.css"
+				}).appendTo("head");
+			}
+			if (random == 4) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-red.css"
+				}).appendTo("head");
+			}
+			if (random == 5) {
+				$("<link/>", {
+					rel: "stylesheet",
+					type: "text/css",
+					href: "css/themes/white-red.css"
+				}).appendTo("head");
+			}
+
+
+
+		}
+
+		function setScrollDown() {
+			var h = window.innerHeight;
+			var f = document.activeElement;
+			console.log(f);
+			// window.scrollBy(0,h);
+			// window.scrollTo('#section5');
+			document.getElementById("section5").scrollIntoView();
+		}
+
+		function setScrollUp() {
+			var h = window.innerHeight;
+			window.scrollBy(0, -h);
+		}
+	</script>
+
+</head>
+
+<body onload="setTheme()">
+	<main>
+		<div id="section1">
+			<div class="intro">Hello, I'm Mohit Kumar!</div>
+			<div class="tagline">
+				<h2>Full-Stack Dev || Tech Junkie</h2>
+			</div>
+			<div class="tagline">
+				<h2>Reactjs | NodeJs | Express | SQL | MongoDb<h2>
+			</div>
+			<div class="tagline">
+				<h5>mk4227525@gmail.com | +91-8975956469</h5>
+			</div>
+
+
+			<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+			<div class="icons-social">
+				<a target="_blank" href="https://github.com/mkayfour"><i class="fab fa-github"></i></a>
+				<a target="_blank" href="https://stackoverflow.com/story/flexdinesh"><i
+						class="fab fa-stack-overflow"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/in/mohit-kumar-125403ab/"><i
+						class="fab fa-linkedin"></i></a>
+				<!-- <button class="upBtn" onclick="setScrollUp()"><img src="arrow_button_metal_green_up.png"></button>
+						<button  class="downBtn"onclick="setScrollDown()"><img src="arrowgreendown.jpg"></button> -->
+
+			</div>
+		</div>
+
+		</div>
+
+		<div id="section2">
+			<div class="intro">Skills</div>
+			<div class="main-content">
+				<div class="tagline"><u>Languages known:</u>
+					<h2>C, C++, Java, HTML, CSS, JavaScript</h2>
+				</div>
+				<div class="tagline"><u>FrontEnd:</u>
+					<h2> ReactJS, </h2> <u>BackEnd:</u>
+					<h2>NodeJS </h2>
+				</div>
+				<div class="tagline"><u>Database Technologies: </u>
+					<h2> MySQL, MongoDB</h2>
+				</div>
+				<div class="tagline"><u>Knows about </u>
+					<h2> Version Controlling, Eslint, Flow,</h2>
+						<h2> Unit and Intergration Testing using Mocha and Chai</h2>
+				</div>
+
+			</div>
+
+
+
+		</div>
+		<div id="section3">
+			<div class="intro">Work Experience</div>
+			<div class="main-content">
+				<h3></h3>MARCH 2019 - PRESENT</h3>
+				<h2>ZCON Solutions, Pune — Software Developer</h2>
+				<h3>● Working as a Full-Stack Developer.</h3>
+				<h3>● Worked on NodeJs, Express and ReactJs. </h3>
+				<h3>● Created and consumed RESTful APIs. </h3>
+				<h3>● Worked
+					on User Interface designs, structure and data handling of the projects.</h3>
+			</div>
+
+
+
+
+		</div>
+		<div id="section4">
+			<div class="intro">Projects</div>
+			<div class="intro">COMING SOON</div>
+			<div class="main-content">
+				<h3>Project links will be added soon. </h3>
+				<div class="tagline">
+					<h2>Check my <a href=""> GITHUB</a> </h2>
+				</div>
+			</div>
+
+		</div>
+		<div id="section5">
+			<div class="intro">Education</div>
+			<div class="main-content">
+				<div class="content-items">
+					<h5>August 2014 - June 2018</h5>
+					<h2>MIT Academy of Engineering, Pune — B.E. Computer Engg.</h2>
+					<h3>Aggregate Percentage: 60.60%</h3>
+				</div>
+				<div class="content-items">
+					<h5>2013-2014</h5>
+					<h2>Kendriya Vidyalaya Army Area, Pune — 12th</h2>
+					<h3>Percentage: 83.30%</h3>
+				</div>
+				<div class="content-items">
+					<h5>2011-2012</h5>
+					<h2>The Army Public School, Pune — 10th</h2>
+					<h3>Percentage: 91.20% </h3>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</main>
+</body>
+</html>
